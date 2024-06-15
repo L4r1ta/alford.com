@@ -99,40 +99,40 @@
         
         <!-- Demo Request Modal -->
         
-        <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title mx-auto" id="demoModalLabel">Request a Demo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Demo request form -->
-                        <form action="https://formsubmit.co/joda.larita@gmail.com" method="POST">
-                            <!-- Add a hidden input for a redirect URL if desired -->
-                            <input type="hidden" name="_next" value="https://l4r1ta.github.io/alford.com/thankyou.html">
-                            
-                            <!-- Add a hidden input for form submission protection -->
-                            <input type="hidden" name="_captcha" value="false">
-                            <!-- Add your form fields -->
-                            <div class="mb-3">
-                                <input type="text" class="form-control custom-input" name="Name" id="demoName" placeholder="Your Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control custom-input" name="Email" id="demoEmail" placeholder="Your Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control custom-input" name="Phone" id="demoPhone" placeholder="Your Phone Number" required>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control custom-input" name="Message" id="demoMessage" rows="3" placeholder="Message Here" required></textarea>
-                            </div>
-                             <button type="submit" id="submitButton" class="btn btn-secondary w-100">Request A Demo</button>
-                        </form>
-                    </div>
+      <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="demoModalLabel">Request a Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Demo request form -->
+                    <form id="demoForm" action="https://formsubmit.co/joda.larita@gmail.com" method="POST" autocomplete="off">
+                        <!-- Add a hidden input for a redirect URL if desired -->
+                        <input type="hidden" name="_next" value="https://l4r1ta.github.io/alford.com/thankyou.html">
+                        <!-- Add a hidden input for form submission protection -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Add your form fields -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control custom-input" name="Name" id="demoName" placeholder="Your Name" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control custom-input" name="Email" id="demoEmail" placeholder="Your Email" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control custom-input" name="Phone" id="demoPhone" placeholder="Your Phone Number" required autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control custom-input" name="Message" id="demoMessage" rows="3" placeholder="Message Here" required autocomplete="off"></textarea>
+                        </div>
+                        <button type="submit" id="submitButton" class="btn btn-secondary w-100">Request A Demo</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container" data-aos="fade-down">
