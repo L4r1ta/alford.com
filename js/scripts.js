@@ -306,8 +306,8 @@ document.getElementById("userMessage").addEventListener("keydown", function(even
 });
 
 //please wait
-document.getElementById('demoForm').addEventListener('submit', function() {
-    var button = document.getElementById('submitButton');
-    button.innerHTML = 'Please wait...';
-    button.disabled = true;
-});
+ document.getElementById('demoForm').addEventListener('submit', function() {
+            var button = document.getElementById('submitButton');
+            button.innerHTML = 'Please wait...';
+            button.disabled = true;
+        });
